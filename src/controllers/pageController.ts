@@ -53,16 +53,3 @@ export const fishes = (req: Request, res: Response) => {
         list
     });
 }
-
-export const roselane = (req: Request, res: Response) => {
-    let list = Pet.getAll();
-
-    res.render('pages/page', {
-        menu: createMenuObject('all'),
-        banner: {
-            title: 'Roselane ',
-            background: 'allanimals.jpg'
-        },
-        list
-    });
-}
